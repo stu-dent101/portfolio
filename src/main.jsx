@@ -18,11 +18,18 @@ const experience = [
   { period: '2022 — 2024', role: 'Software Engineer', company: 'Technology Projects', detail: 'Built and maintained production web systems across the stack.' },
 ]
 
-const skills = [
+/*const skills = [
   ['01', 'Software Engineering', 'TypeScript, React, Node.js, REST APIs, system design'],
   ['02', 'Mobile Development', 'React Native, Flutter, responsive interfaces, offline-first data'],
   ['03', 'Cybersecurity', 'Threat modeling, application security, testing, secure architecture'],
   ['04', 'Data & Analytics', 'Python, SQL, data visualization, dashboards, reporting'],
+]*/
+
+const skills = [
+  ['Software Engineering', 'pending, pending, pending'],
+  ['Mobile Development', 'pending, pending, pending'],
+  ['Cybersecurity', 'pending, pending, pending'],
+  ['Data & Analytics', 'pending, pending, pending'],
 ]
 
 function App() {
@@ -122,11 +129,8 @@ function App() {
 
         <section className="section container" id="about">
           {/*<div className="section-heading"><span>01</span><div><p className="eyebrow">ABOUT</p><h2>ABOUT</h2></div>{/*</div>*/}
+          <div className="section-heading">{/*<span>01</span><div><p className="eyebrow">ABOUT</p>*/}<h2>ABOUT_ME</h2></div>{/*</div>*/}
           <div className="about-grid">
-            <p className="lead">
-              <div className="section-heading">{/*<span>01</span><div><p className="eyebrow">ABOUT</p>*/}<h2>ABOUT_ME</h2></div>{/*</div>*/}
-
-            </p>
             <div>
               <p>My background in Computer Science has given me a foundation in programming, software development, database management and information systems. Through internships, academic projects and hands-on experience, I've worked with different technologies, explored different tools and developed solutions ranging from web applications and backend systems to AI-powered and data driven applications.</p>
               <p>Interested in exploring how software engineering, artificial intelligence, cybersecurity and data analytics can work together to solve complex real-world problems.</p>
@@ -140,11 +144,16 @@ function App() {
 
 
         <section className="section container" id="skills">
-          <div className="section-heading"><span>02</span><div><p className="eyebrow">CAPABILITIES</p><h2>Skills built through doing.</h2></div></div>
-          <div className="skills-grid">
-            {skills.map(([number, title, detail]) => (
+          {/*<div className="section-heading"><span>02</span><div><p className="eyebrow">CAPABILITIES</p><h2>Skills built through doing.</h2></div></div>*/}
+          <div className="section-heading">{/*<span>02</span><div><p className="eyebrow">CAPABILITIES</p>*/}<h2>SKILLS</h2></div>{/*</div>*/}
+            <div className="skills-grid">
+            {/*{skills.map(([number, title, detail]) => (
               <article className="skill-card" key={title}>
                 <span>{number}</span><h3>{title}</h3><p>{detail}</p>
+              </article>}*/}
+            {skills.map(([title, detail]) => (
+              <article className="skill-card" key={title}>
+                <h3>{title}</h3><p>{detail}</p>
               </article>
             ))}
           </div>
