@@ -31,17 +31,28 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; }
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #090d18 url('/background.jpeg') center / cover fixed;
+}
 a { color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; }
 button { cursor: pointer; }
-.site-shell { min-height: 100vh; overflow: hidden; background: var(--bg); color: var(--text); transition: background .25s, color .25s; }
+.site-shell {
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(rgba(9, 13, 24, .82), rgba(9, 13, 24, .82)),
+    url('/background.jpeg') center / cover fixed;
+  color: var(--text);
+  transition: color .25s;
+}
 .container { width: min(1120px, calc(100% - 48px)); margin-inline: auto; }
 
 .starfield { position: fixed; inset: 0; pointer-events: none; opacity: .42; background-image: radial-gradient(circle, rgba(88,166,255,.7) 0 1px, transparent 1.5px), radial-gradient(circle, rgba(244,114,182,.45) 0 1px, transparent 1.5px); background-size: 137px 137px, 211px 211px; background-position: 12px 18px, 80px 40px; mask-image: linear-gradient(to bottom, black, transparent 82%); }
 .cursor-glow { position: fixed; left: 0; top: 0; width: 200px; height: 200px; pointer-events: none; z-index: 20; background: radial-gradient(circle, rgba(88,166,255,.09), transparent 68%); transition: transform .08s linear; }
 
-.nav-wrap { height: 74px; border-bottom: 1px solid var(--line); position: fixed; inset: 0 0 auto; z-index: 30; backdrop-filter: blur(16px); background: var(--nav); }
+.nav-wrap { height: 74px; border-bottom: 1px solid var(--line); position: fixed; inset: 0 0 auto; z-index: 30; backdrop-filter: blur(16px); background: var(--nav);}
 .nav { height: 100%; display: flex; align-items: center; justify-content: space-between; }
 .brand { font-family: 'DM Mono', monospace; font-size: 13px; letter-spacing: .08em; }
 .brand span { display: inline-grid; place-items: center; width: 30px; height: 30px; margin-right: 10px; border: 1px solid var(--pink); color: var(--blue); box-shadow: inset 0 0 12px rgba(88,166,255,.15); }
@@ -108,8 +119,8 @@ h1 em { display: block; font-style: normal; color: var(--purple); }
 .lead { margin: 0; font-size: 28px; line-height: 1.45; letter-spacing: -.025em; }
 .about-grid div { color: var(--muted); line-height: 1.75; }
 
-.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px solid var(--line); border-left: 2px solid var(--line); }
-.skill-card { min-height: 240px; padding: 28px 24px; border-right: 2px solid var(--line); border-bottom: 2px solid var(--line); }
+.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.skill-card { min-height: 240px; padding: 28px 24px; border: 1px solid var(--line); background: var(--surface); cursor: default; transition: none; border-radius: 12px; }
 .skill-card > span { font: 10px 'DM Mono', monospace; color: var(--blue); }
 .skill-card h3 { margin: 48px 0 18px; font-size: 18px; color: var(--purple)}
 .skill-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }

@@ -57,7 +57,7 @@ function App() {
 
   return (
     <div className="site-shell">
-      <div className="starfield" aria-hidden="true" />
+      {/*<div className="starfield" aria-hidden="true" />*/}
       {/*<div className="cursor-glow" style={{ transform: `translate(${mouse.x - 100}px, ${mouse.y - 100}px)` }} aria-hidden="true" />*/}
       
     
@@ -75,9 +75,9 @@ function App() {
             {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map((item) => (
               <a href={`#${item.toLowerCase()}`} onClick={closeMenu} key={item}>{item}</a>
             ))}
-            <button className="theme-toggle" onClick={() => setDark(!dark)} aria-label="Toggle color theme">
+            {/*<button className="theme-toggle" onClick={() => setDark(!dark)} aria-label="Toggle color theme">
               <span>{dark ? '☀' : '☾'}</span>
-            </button>
+            </button>*/}
           </div>
         </nav>
       </header>
