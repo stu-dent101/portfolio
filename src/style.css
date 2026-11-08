@@ -108,8 +108,8 @@ h1 em { display: block; font-style: normal; color: var(--purple); }
 .lead { margin: 0; font-size: 28px; line-height: 1.45; letter-spacing: -.025em; }
 .about-grid div { color: var(--muted); line-height: 1.75; }
 
-.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--pink); border-left: 1px solid var(--pink); }
-.skill-card { min-height: 240px; padding: 28px 24px; border-right: 1px solid var(--pink); border-bottom: 1px solid var(--pink); }
+.skills-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px solid var(--line); border-left: 2px solid var(--line); }
+.skill-card { min-height: 240px; padding: 28px 24px; border-right: 2px solid var(--line); border-bottom: 2px solid var(--line); }
 .skill-card > span { font: 10px 'DM Mono', monospace; color: var(--blue); }
 .skill-card h3 { margin: 48px 0 18px; font-size: 18px; color: var(--purple)}
 .skill-card p { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
