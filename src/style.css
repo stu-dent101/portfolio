@@ -122,6 +122,8 @@ h1 em { display: block; font-style: normal; color: var(--purple); }
 .timeline-arrow { color: var(--blue); }
 
 .projects-heading { grid-template-columns: 50px 1fr auto; }
+.experience-heading { grid-template-columns: 1fr auto; align-items: end; }
+.experience-heading .text-button { justify-self: end; }
 .text-button { align-self: end; border: 0; border-bottom: 1px solid var(--blue); padding: 0 0 8px; color: var(--text); background: transparent; font-size: 12px; }
 .text-button span { margin-left: 18px; color: var(--blue); }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
@@ -181,7 +183,9 @@ footer div div { display: flex; gap: 24px; }
   .about-grid, .contact-section { grid-template-columns: 1fr; gap: 25px; }
   .skills-grid, .project-grid { grid-template-columns: 1fr; }
   .section-heading, .projects-heading { grid-template-columns: 36px 1fr; }
+  .experience-heading { grid-template-columns: 1fr; }
   .text-button { grid-column: 2; justify-self: start; margin-top: 24px; }
+  .experience-heading .text-button { grid-column: 1; justify-self: end; }
   .timeline article { grid-template-columns: 1fr 20px; }
   .timeline time { grid-column: 1 / -1; }
   footer .container { height: 110px; align-items: flex-start; flex-direction: column; justify-content: center; gap: 18px; }

@@ -172,8 +172,8 @@ function App() {
 
 
         <section className="section container" id="experience">
-          <div className="section-heading projects-heading">
-            <span></span><div>{/*<p className="eyebrow">EXPERIENCE</p>*/}<h2>WORK_EXPERIENCE</h2></div>
+          <div className="section-heading experience-heading">
+            <div>{/*<p className="eyebrow">EXPERIENCE</p>*/}<h2>WORK_EXPERIENCE</h2></div>
             <button className="text-button" onClick={() => setShowAllExperience(!showAllExperience)}>
               {showAllExperience ? 'Show less' : 'View all experiences'} <span>→</span>
             </button>
