@@ -175,7 +175,7 @@ function App() {
           <div className="section-heading experience-heading">
             <div>{/*<p className="eyebrow">EXPERIENCE</p>*/}<h2>WORK_EXPERIENCE</h2></div>
             <button className="text-button" onClick={() => setShowAllExperience(!showAllExperience)}>
-              {showAllExperience ? 'Show less' : 'View all experiences'} <span>→</span>
+              {showAllExperience ? 'Show less' : 'View all experiences'} {/*<span>→</span>*/}
             </button>
           </div>
           <div className="timeline">
@@ -195,8 +195,8 @@ function App() {
 
         <section className="section container" id="projects">
           <div className="section-heading projects-heading">
-            <span>04</span><div><p className="eyebrow">SELECTED WORK</p><h2>Projects with evidence.</h2></div>
-            <button className="text-button" onClick={() => setShowAll(!showAll)}>{showAll ? 'Show less' : 'View all projects'} <span>→</span></button>
+            {/*<span>04</span><div><p className="eyebrow">SELECTED WORK</p>*/}<h2>PROJECTS</h2>{/*</div>*/}
+            <button className="text-button" onClick={() => setShowAll(!showAll)}>{showAll ? 'Show less' : 'View all projects'} {/*<span>→</span>*/}</button>
           </div>
           <div className="project-grid">
             {visibleProjects.map((project) => (
@@ -204,18 +204,23 @@ function App() {
                 <div className="project-preview">
                   <div className="preview-grid" />
                   <div className="preview-window"><i /><i /><i /><div /></div>
-                  <span className="project-index">0{visibleProjects.indexOf(project) + 1}</span>
+                  {/*<span className="project-index">0{visibleProjects.indexOf(project) + 1}</span>*/}
                 </div>
                 <div className="project-info">
                   <p>{project.type}</p><h3>{project.title}</h3>
                   <p>{project.summary}</p>
                   <div className="tags">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                  <span className="demo-link">View demo ↗</span>
+                  <span className="demo-link">View demo</span>
                 </div>
               </a>
             ))}
           </div>
         </section>
+
+
+
+
+
 
         <section className="section container contact-section" id="contact">
           <div className="contact-copy">
