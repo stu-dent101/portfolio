@@ -34,7 +34,7 @@ html { scroll-behavior: smooth; }
 body {
   margin: 0;
   min-width: 320px;
-  background: #090d18 url('/background.jpeg') center / cover fixed;
+  background: #090d18 url('/portfolio/background.jpeg') center / cover fixed;
 }
 a { color: inherit; text-decoration: none; }
 button, input, textarea { font: inherit; }
@@ -43,7 +43,7 @@ button { cursor: pointer; }
   min-height: 100vh;
   overflow: hidden;
   background: linear-gradient(rgba(9, 13, 24, .82), rgba(9, 13, 24, .82)),
-    url('/background.jpeg') center / cover fixed;
+    url('/portfolio/background.jpeg') center / cover fixed;
   color: var(--text);
   transition: color .25s;
 }
