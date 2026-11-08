@@ -121,15 +121,23 @@ function App() {
 
 
         <section className="section container" id="about">
-          <div className="section-heading"><span>01</span><div><p className="eyebrow">ABOUT</p><h2>Engineering, with purpose.</h2></div></div>
+          {/*<div className="section-heading"><span>01</span><div><p className="eyebrow">ABOUT</p><h2>ABOUT</h2></div>{/*</div>*/}
           <div className="about-grid">
-            <p className="lead">I turn complex requirements into clear, secure, and scalable digital products.</p>
+            <p className="lead">
+              <div className="section-heading">{/*<span>01</span><div><p className="eyebrow">ABOUT</p>*/}<h2>ABOUT_ME</h2></div>{/*</div>*/}
+
+            </p>
             <div>
-              <p>I’m a full-stack developer working across web, mobile, cybersecurity, and data. I care about readable code, strong product decisions, and systems people can trust.</p>
-              <p>Add your short career story here. Keep it specific: what you build, what you are good at, and the kind of team where you do your best work.</p>
+              <p>My background in Computer Science has given me a foundation in programming, software development, database management and information systems. Through internships, academic projects and hands-on experience, I've worked with different technologies, explored different tools and developed solutions ranging from web applications and backend systems to AI-powered and data driven applications.</p>
+              <p>Interested in exploring how software engineering, artificial intelligence, cybersecurity and data analytics can work together to solve complex real-world problems.</p>
             </div>
           </div>
         </section>
+
+
+
+
+
 
         <section className="section container" id="skills">
           <div className="section-heading"><span>02</span><div><p className="eyebrow">CAPABILITIES</p><h2>Skills built through doing.</h2></div></div>
@@ -141,6 +149,11 @@ function App() {
             ))}
           </div>
         </section>
+
+
+
+
+
 
         <section className="section container" id="experience">
           <div className="section-heading"><span>03</span><div><p className="eyebrow">EXPERIENCE</p><h2>Where I’ve worked.</h2></div></div>
