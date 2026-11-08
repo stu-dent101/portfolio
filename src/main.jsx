@@ -47,11 +47,16 @@ function App() {
   return (
     <div className="site-shell">
       <div className="starfield" aria-hidden="true" />
-      <div className="cursor-glow" style={{ transform: `translate(${mouse.x - 100}px, ${mouse.y - 100}px)` }} aria-hidden="true" />
+      {/*<div className="cursor-glow" style={{ transform: `translate(${mouse.x - 100}px, ${mouse.y - 100}px)` }} aria-hidden="true" />*/}
+      
+    
+
+
+
 
       <header className="nav-wrap">
         <nav className="nav container" aria-label="Primary navigation">
-          <a className="brand" href="#top" onClick={closeMenu}><span>Y</span> YOUR_NAME</a>
+          <a className="brand" href="#top" onClick={closeMenu}><span>KO</span> Katoya_Ottley</a>
           <button className="menu-button" onClick={() => setMenuOpen(!menuOpen)} aria-expanded={menuOpen} aria-label="Toggle navigation">
             <span /><span />
           </button>
