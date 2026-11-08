@@ -224,21 +224,22 @@ function App() {
 
         <section className="section container contact-section" id="contact">
           <div className="contact-copy">
-            <p className="eyebrow">CONTACT</p>
-            <h2>Have a role or an idea?</h2>
+            {/*<p className="eyebrow">CONTACT</p>*/}
+            <div className="section-heading"><h2>CONTACT</h2></div>
+            <p>Have a role or an idea?</p>
             <p>Tell me what you’re building. I’m open to engineering roles, product collaborations, and ambitious technical projects.</p>
-            <a href="mailto:hello@example.com">hello@example.com ↗</a>
+            {/*<a href="mailto:hello@example.com">hello@example.com ↗</a>*/}
           </div>
           <form className="contact-form" action="mailto:hello@example.com" method="post" encType="text/plain">
             <label>Name<input name="name" placeholder="Your name" required /></label>
             <label>Email<input name="email" type="email" placeholder="you@email.com" required /></label>
             <label>Message<textarea name="message" rows="5" placeholder="Tell me about the opportunity..." required /></label>
-            <button className="button primary" type="submit">Send message <span>↗</span></button>
+            <button className="button primary" type="submit">Send message {/*<span>↗</span>*/}</button>
           </form>
         </section>
       </main>
 
-      <footer><div className="container"><span>YOUR_NAME © 2026</span><div><a href="#">GitHub ↗</a><a href="#">LinkedIn ↗</a></div></div></footer>
+      <footer><div className="container"><span>Katoya_Ottley © 2026</span><div><a href="#">GitHub</a><a href="#">LinkedIn</a></div></div></footer>
     </div>
   )
 }
