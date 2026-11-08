@@ -41,7 +41,7 @@ function App() {
     return () => window.removeEventListener('pointermove', move)
   }, [])
 
-  const visibleProjects = showAll ? projects : projects.slice(0, 6)
+  const visibleProjects = showAll ? projects : projects.slice(0, 3)
   const closeMenu = () => setMenuOpen(false)
 
   return (
@@ -65,43 +65,55 @@ function App() {
           </div>
         </nav>
       </header>
+      
+
+
+
+
 
       <main id="top">
         <section className="hero-section container">
-          <div className="hero-copy">
-            <div className="status"><span /> Available for opportunities</div>
-            <p className="eyebrow">FULL-STACK · MOBILE · CYBERSECURITY · DATA</p>
-            <h1>I build secure systems that <em>solve real problems.</em></h1>
-            <p className="hero-summary">Software engineer with a security mindset, focused on reliable products and practical engineering.</p>
-            <div className="hero-actions">
-              <a className="button primary" href="#projects">View my work <span>↗</span></a>
-              <a className="button secondary" href="#contact">Let&apos;s connect</a>
-            </div>
-          </div>
-          <div className="hero-console" aria-label="Engineering profile">
+          
+          <div className="hero-console" aria-label="Developer profile">
             <div className="console-bar"><i /><i /><i /><span>profile.exe</span></div>
             <div className="console-body">
               <div className="portrait-frame">
-                <div className="portrait-placeholder">YOUR<br />PHOTO</div>
+                <div className="portrait-placeholder">ADD<br />PHOTO</div>
               </div>
               <div className="console-output">
-                <p><b>&gt;</b> whoami</p>
-                <strong>Your Name</strong>
-                <p><b>&gt;</b> focus</p>
-                <span>building secure products</span>
-                <div className="signal"><i /><i /><i /><i /><i /></div>
+                {/*<p><b>&gt;</b> whoami</p>*/}
+                <strong>Katoya Ottley</strong>
+                {/*<p><b>&gt;</b> focus</p>*/}
+                {/*<span>building secure products</span>*/}
+                <div className="hero-copy">
+                  {/*<div className="status"><span /> Available for opportunities</div>*/}
+
+            {/*<h1>I build secure systems that <em>solve real problems.</em></h1>*/}
+            <p className="hero-summary">Technology-driven problem solver passionate about building innovative solutions, analysing complex systems, exploring emerging technologies and developing practical skills through continuous learning, collaboration and hands-on experience.</p>
+            <p className="eyebrow">FULL-STACK · MOBILE · CYBERSECURITY · DATA</p>
+            <div className="hero-actions">
+              <a className="button primary" href="#projects">View my work</a>
+              <a className="button secondary" href="#contact">Let&apos;s connect</a>
+            </div>
+          </div>
+                {/*<div className="signal"><i /><i /><i /><i /><i /></div>*/}
               </div>
             </div>
           </div>
         </section>
 
-        <section className="proof-strip">
+        {/*<section className="proof-strip">
           <div className="container proof-grid">
             <div><strong>4</strong><span>Engineering disciplines</span></div>
             <div><strong>8+</strong><span>Projects to explore</span></div>
             <div><strong>100%</strong><span>Curious by default</span></div>
           </div>
-        </section>
+        </section>*/}
+
+
+
+
+
 
         <section className="section container" id="about">
           <div className="section-heading"><span>01</span><div><p className="eyebrow">ABOUT</p><h2>Engineering, with purpose.</h2></div></div>
