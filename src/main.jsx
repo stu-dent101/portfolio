@@ -13,7 +13,7 @@ const projects = [
 ]
 
 const experience = [
-  { period: 'November, 2026 — Present', role: 'Tech Generalist Developer', company: 'Freelance', detail: 'Full Stack, Software Engineer, Cybersecurity, Data & Analytics, Mobile Development, etc.' },
+  { period: 'November 2026 — Present', role: 'Tech Generalist Developer', company: 'Freelance', detail: 'Full Stack, Software Engineer, Cybersecurity, Data & Analytics, Mobile Development, etc.' },
   { period: 'July - September, 2025', role: 'Developer Intern', company: 'TRINRE Insurance', detail: 'Implemented caching into an application.' },
   /*{ period: '2020 — 2022', role: 'Junior Software Engineer', company: 'Technology Projects', detail: 'Developed web features, maintained databases, and supported application releases.' },
   { period: '2018 — 2020', role: 'IT Support Technician', company: 'Technology Support', detail: 'Resolved technical issues, maintained systems, and documented support procedures.' },*/
