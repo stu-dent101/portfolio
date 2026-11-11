@@ -139,23 +139,15 @@ h1 em { display: block; font-style: normal; color: var(--purple); }
 .text-button { align-self: end; border: 0; border-bottom: 1px solid var(--blue); padding: 0 0 8px; color: var(--text); background: transparent; font-size: 12px; }
 .text-button span { margin-left: 18px; color: var(--blue); }
 .project-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-.project-card { border: 1px solid var(--line); background: var(--surface); transition: transform .25s, border-color .25s; }
+.project-card { display: block; border: 1px solid var(--line); background: var(--surface); transition: transform .25s, border-color .25s;}
 .project-card:hover { transform: translateY(-5px); border-color: rgba(88,166,255,.5); }
-.project-preview { height: 190px; position: relative; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, rgba(88,166,255,.08), rgba(167,139,250,.03)); }
-.project-card.pink .project-preview { background: linear-gradient(145deg, rgba(244,114,182,.09), rgba(167,139,250,.03)); }
-.project-card.purple .project-preview { background: linear-gradient(145deg, rgba(167,139,250,.12), rgba(88,166,255,.03)); }
-.preview-grid { position: absolute; inset: 0; opacity: .35; background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 24px 24px; }
-.preview-window { position: relative; width: 70%; height: 105px; border: 1px solid rgba(88,166,255,.35); background: var(--bg); box-shadow: 9px 9px 0 rgba(88,166,255,.07); }
-.preview-window i { display: inline-block; width: 5px; height: 5px; margin: 8px 0 0 5px; border-radius: 50%; background: var(--blue); }
-.preview-window div { height: 62px; margin: 12px; border-left: 1px solid var(--purple); border-bottom: 1px solid var(--purple); transform: skewY(-8deg); }
-.project-index { position: absolute; right: 12px; bottom: 8px; font: 9px 'DM Mono', monospace; color: var(--muted); }
+.project-preview { height: 190px; overflow: hidden; background: linear-gradient(145deg, rgba(88,166,255,.08), rgba(167,139,250,.03)); }
+.project-cover { display: block; width: 100%; height: 100%; object-fit: cover; }
 .project-info { padding: 22px; }
-.project-info > p:first-child { font: 10px 'DM Mono', monospace; color: var(--blue); text-transform: uppercase; }
 .project-info h3 { margin: 9px 0; font-size: 21px; }
-.project-info > p:nth-of-type(2) { min-height: 63px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
+.project-summary { min-height: 63px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
 .tags span { padding: 5px 8px; border: 1px solid var(--line); font: 9px 'DM Mono', monospace; color: var(--muted); }
-.demo-link { display: inline-block; margin-top: 20px; color: var(--text); font-size: 12px; }
 
 .contact-section { display: grid; grid-template-columns: 1fr 1fr; gap: 90px; padding-bottom: 120px; }
 .contact-copy > p:nth-of-type(2) { max-width: 480px; margin: 25px 0; color: var(--muted); line-height: 1.8; }

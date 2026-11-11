@@ -3,21 +3,20 @@ import { createRoot } from 'react-dom/client'
 import './style.css'
 
 const projects = [
-  { title: 'SecureVault', type: 'Security Platform', summary: 'Privacy-first credentials manager with encrypted storage and security monitoring.', stack: ['React', 'Node.js', 'AES'], accent: 'cyan', featured: true },
-  { title: 'Pulse Analytics', type: 'Data Application', summary: 'Interactive analytics dashboard turning operational data into clear decisions.', stack: ['Python', 'React', 'SQL'], accent: 'pink', featured: true },
-  { title: 'FieldNotes Mobile', type: 'Mobile App', summary: 'Offline-first field reporting app with synced media and location capture.', stack: ['React Native', 'Firebase'], accent: 'purple', featured: true },
-  { title: 'Sentinel API', type: 'Backend System', summary: 'Threat-aware API gateway with rate limiting, audit logs, and anomaly alerts.', stack: ['Go', 'PostgreSQL'], accent: 'cyan' },
-  { title: 'Signal Tracker', type: 'Mobile App', summary: 'A focused personal insights app with private local-first storage.', stack: ['Flutter', 'SQLite'], accent: 'pink' },
-  { title: 'Identity Lab', type: 'Security Research', summary: 'Authentication testing environment for vulnerability discovery and reporting.', stack: ['Burp Suite', 'Python'], accent: 'purple' },
-  { title: 'Ops Command', type: 'Full-stack Tool', summary: 'Incident coordination workspace with live status and team handoffs.', stack: ['Next.js', 'Redis'], accent: 'cyan' },
-  { title: 'Market Lens', type: 'Data Science', summary: 'Forecasting and visualization prototype for rapid market exploration.', stack: ['Pandas', 'Plotly'], accent: 'pink' },
+  {
+    title: 'Coming Soon',
+    summary: 'Details Pending.',
+    stack: ['Pending', 'Pending', 'Pending'],
+    coverArt: `${import.meta.env.BASE_URL}coverArt.jpeg`,
+    transport: 'https://youtu.be/Hfm94aHAbYQ?si=0zocskRScTJjfvuE',
+  },
 ]
 
 const experience = [
-  { period: '2024 — Present', role: 'Full-stack & Security Engineer', company: 'Independent / Freelance', detail: 'Designing secure applications, mobile experiences, and data tools.' },
-  { period: '2022 — 2024', role: 'Software Engineer', company: 'Technology Projects', detail: 'Built and maintained production web systems across the stack.' },
-  { period: '2020 — 2022', role: 'Junior Software Engineer', company: 'Technology Projects', detail: 'Developed web features, maintained databases, and supported application releases.' },
-  { period: '2018 — 2020', role: 'IT Support Technician', company: 'Technology Support', detail: 'Resolved technical issues, maintained systems, and documented support procedures.' },
+  { period: 'November, 2026 — Present', role: 'Tech Generalist Developer', company: 'Freelance', detail: 'Full Stack, Software Engineer, Cybersecurity, Data & Analytics, Mobile Development, etc.' },
+  { period: 'July - September, 2025', role: 'Developer Intern', company: 'TRINRE Insurance', detail: 'Implemented caching into an application.' },
+  /*{ period: '2020 — 2022', role: 'Junior Software Engineer', company: 'Technology Projects', detail: 'Developed web features, maintained databases, and supported application releases.' },
+  { period: '2018 — 2020', role: 'IT Support Technician', company: 'Technology Support', detail: 'Resolved technical issues, maintained systems, and documented support procedures.' },*/
 ]
 
 /*const skills = [
@@ -28,7 +27,7 @@ const experience = [
 ]*/
 
 const skills = [
-  ['Software Engineering', 'pending, pending, pending'],
+  ['Software Engineering', 'React, pending, pending'],
   ['Mobile Development', 'pending, pending, pending'],
   ['Cybersecurity', 'pending, pending, pending'],
   ['Data & Analytics', 'pending, pending, pending'],
@@ -72,7 +71,7 @@ function App() {
             <span /><span />
           </button>
           <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-            {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map((item) => (
+            {['About', /*'Skills',*/ 'Experience', 'Projects', 'Contact'].map((item) => (
               <a href={`#${item.toLowerCase()}`} onClick={closeMenu} key={item}>{item}</a>
             ))}
             {/*<button className="theme-toggle" onClick={() => setDark(!dark)} aria-label="Toggle color theme">
@@ -139,30 +138,9 @@ function App() {
             <div className="section-heading">{/*<span>01</span><div><p className="eyebrow">ABOUT</p>*/}<h2>ABOUT_ME</h2></div>{/*</div>*/}
           </p> 
             <div>
-              <p>My background in Computer Science has given me a foundation in programming, software development, database management and information systems. Through internships, academic projects and hands-on experience, I've worked with different technologies, explored different tools and developed solutions ranging from web applications and backend systems to AI-powered and data driven applications.</p>
+              <p>My background in Computer Science has given me a foundation in programming, software development, database management and information systems. Through internships, academic projects and hands-on experience, I&apos;ve worked with different technologies, explored different tools and developed solutions ranging from web applications and backend systems to AI-powered and data driven applications.</p>
               <p>Interested in exploring how software engineering, artificial intelligence, cybersecurity and data analytics can work together to solve complex real-world problems.</p>
             </div>
-          </div>
-        </section>
-
-
-
-
-
-
-        <section className="section container" id="skills">
-          {/*<div className="section-heading"><span>02</span><div><p className="eyebrow">CAPABILITIES</p><h2>Skills built through doing.</h2></div></div>*/}
-          <div className="section-heading">{/*<span>02</span><div><p className="eyebrow">CAPABILITIES</p>*/}<h2>SKILLS</h2></div>{/*</div>*/}
-            <div className="skills-grid">
-            {/*{skills.map(([number, title, detail]) => (
-              <article className="skill-card" key={title}>
-                <span>{number}</span><h3>{title}</h3><p>{detail}</p>
-              </article>}*/}
-            {skills.map(([title, detail]) => (
-              <article className="skill-card" key={title}>
-                <h3>{title}</h3><p>{detail}</p>
-              </article>
-            ))}
           </div>
         </section>
 
@@ -174,9 +152,9 @@ function App() {
         <section className="section container" id="experience">
           <div className="section-heading experience-heading">
             <div>{/*<p className="eyebrow">EXPERIENCE</p>*/}<h2>WORK_EXPERIENCE</h2></div>
-            <button className="text-button" onClick={() => setShowAllExperience(!showAllExperience)}>
-              {showAllExperience ? 'Show less' : 'View all experiences'} {/*<span>→</span>*/}
-            </button>
+            {/*<button className="text-button" onClick={() => setShowAllExperience(!showAllExperience)}>
+              {showAllExperience ? 'Show less' : 'View all experiences'}
+            </button> {/*Temp remove until I have more than 3 experiences*/}
           </div>
           <div className="timeline">
             {visibleExperience.map((item) => (
@@ -196,21 +174,18 @@ function App() {
         <section className="section container" id="projects">
           <div className="section-heading projects-heading">
             {/*<span>04</span><div><p className="eyebrow">SELECTED WORK</p>*/}<h2>PROJECTS</h2>{/*</div>*/}
-            <button className="text-button" onClick={() => setShowAll(!showAll)}>{showAll ? 'Show less' : 'View all projects'} {/*<span>→</span>*/}</button>
+           {/*} <button className="text-button" onClick={() => setShowAll(!showAll)}>{showAll ? 'Show less' : 'View all projects'}</button> {/*Temp remove until I have more than 3 projects*/}
           </div>
           <div className="project-grid">
             {visibleProjects.map((project) => (
-              <a className={`project-card ${project.accent}`} href="#" key={project.title} onClick={(e) => e.preventDefault()}>
+              <a className="project-card" href={project.transport} key={project.title} aria-label={`Open ${project.title}`}>
                 <div className="project-preview">
-                  <div className="preview-grid" />
-                  <div className="preview-window"><i /><i /><i /><div /></div>
-                  {/*<span className="project-index">0{visibleProjects.indexOf(project) + 1}</span>*/}
+                  <img className="project-cover" src={project.coverArt} alt={`${project.title} cover`} />
                 </div>
                 <div className="project-info">
-                  <p>{project.type}</p><h3>{project.title}</h3>
-                  <p>{project.summary}</p>
+                  <h3>{project.title}</h3>
+                  <p className="project-summary">{project.summary}</p>
                   <div className="tags">{project.stack.map((tag) => <span key={tag}>{tag}</span>)}</div>
-                  <span className="demo-link">View demo</span>
                 </div>
               </a>
             ))}
@@ -227,7 +202,7 @@ function App() {
             {/*<p className="eyebrow">CONTACT</p>*/}
             <div className="section-heading"><h2>CONTACT</h2></div>
             <p>Have a role or an idea?</p>
-            <p>Tell me what you’re building. I’m open to engineering roles, product collaborations, and ambitious technical projects.</p>
+            <p>Tell me what you&apos;re building. I&apos;m open to engineering roles, product collaborations, and ambitious technical projects.</p>
             {/*<a href="mailto:hello@example.com">hello@example.com ↗</a>*/}
           </div>
           <form className="contact-form" action="mailto:hello@example.com" method="post" encType="text/plain">
