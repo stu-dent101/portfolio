@@ -1,5 +1,10 @@
 # Developer Portfolio
 
+## Deployed application link
+
+https://stu-dent101.github.io/portfolio/#top
+
+
 ## Run locally
 
 From the project directory, install dependencies and start the Vite development server:
