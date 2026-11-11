@@ -180,7 +180,7 @@ footer div div { display: flex; gap: 24px; }
   .menu-button span { width: 18px; height: 1px; background: var(--text); }
   .nav-links { position: fixed; top: 74px; left: 16px; right: 16px; display: none; padding: 20px; border: 1px solid var(--line); background: var(--surface); }
   .nav-links.open { display: grid; }
-  .hero-section { height: 100vh; height: 100dvh; min-height: 0; gap: 50px; padding-top: 125px; }
+  .hero-section { height: auto; min-height: 100vh; min-height: 100dvh; gap: 50px; padding-top: 125px; padding-bottom: 48px; }
   h1 { font-size: 48px; }
   .hero-summary { font-size: 16px; }
   .hero-actions { flex-direction: column; }
